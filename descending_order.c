@@ -13,8 +13,8 @@ int main() {
   printf("Nº5: ");
   scanf("%d", &n5);
   int num[] = {n1,n2,n3,n4,n5};
-  for(i = 0; i < 5; i++) {
-    for(x = i+1; x < 5; x++) {
+  for(i = 0; i < 5; i += 1) {
+    for(x = i + 1; x < 5; x += 1) {
       if(num[i] < num[x]) {
         temp = num[i];
         num[i] = num[x];
@@ -22,7 +22,7 @@ int main() {
       }
     }
   }
-  for (int i = 0; i < 5; i++) {
+  for (i = 0; i < 5; i += 1) {
     printf("%d | ", num[i]);
   }
 }

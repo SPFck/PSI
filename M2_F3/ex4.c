@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 int main() {
-  int x = 1;
-  int flag;
+  int x = 1, a = 0, b = 0, c = 0, d = 0, e = 0, flag;
 
   while(x != 0) {
     printf("Insira a idade: ");
@@ -23,20 +22,22 @@ int main() {
     }
 
     switch(flag) {
-      case 1: printf("Faixa etária: De 1 a 15 anos.\n");
+      case 1: a++;
               break;
-      case 2: printf("Faixa etária: De 16 a 30 anos.\n");
+      case 2: b++;
               break;
-      case 3: printf("Faixa etária: De 31 a 45 anos.\n");
+      case 3: c++;
               break;
-      case 4: printf("Faixa etária: De 46 a 60 anos.\n");
+      case 4: d++;
               break;
-      case 5: printf("Faixa etária: Mais de 61 anos.\n");
+      case 5: e++;
               break;
 
-      default: printf("Encerrando...\n");
+      default: printf("Calculando resultado...\n");
     }
   }
+
+  printf("(Faixas etárias)\nDe 1 a 15 anos -> %d\nDe 16 a 30 anos -> %d\nDe 31 a 45 anos -> %d\nDe 46 a 60 anos -> %d\nMais de 61 anos -> %d\n", a, b, c, d, e);
 
   return 0;
 }

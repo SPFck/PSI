@@ -1,19 +1,21 @@
 #include <stdio.h>
 
-int main() {
-  float ft, st, m;
+int main()
+{
+  float nota1, nota2, medua;
 
   printf("Insira a nota do 1º teste: ");
-  scanf("%f", &ft);
+  scanf("%f", &nota1);
   printf("Insira a nota do 2º teste: ");
-  scanf("%f", &st);
+  scanf("%f", &nota2);
   m = (ft+st)/2;
-  printf("Média: %.2f\n", m);
-  if(m >= 10) {
-    printf("Você passou!");
-  } else {
-    printf("Você reprovou!");
+  printf("media %f", medua);
+  if(m >= 10)
+  {
+    printf("passou");
   }
-
-  return 0;
+  else
+  {
+    printf("reprovou");
+  }
 }

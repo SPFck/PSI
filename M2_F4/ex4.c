@@ -1,14 +1,14 @@
 #include <stdio.h>
 
-int main() {
-  char *x;
+int main()
+{
+  char*nome;
   
-  printf("Insira o seu username: ");
-  scanf("%s", x);
+  printf("Insira o nome: ");
+  scanf("%s", nome);
 
-  for(int i = 0; i != 10; i++) {
-    printf("%s\n", x);
+  for(int i = 0; i < 10; i++)
+  {
+    printf("%s ", nome);
   }
-
-  return 0;
 }

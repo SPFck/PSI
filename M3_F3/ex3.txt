@@ -1,0 +1,1 @@
+Sim, as variáveis "conta" e "soma" podem e devem ser definidas dentro da função, sendo que as variáveis "n1" e "n2" poderiam ser definidas na função porém não iriam pedir parâmetros pois seriam pedidas ao usuário dentro da função também.

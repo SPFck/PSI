@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 int factorial(int x) {
-    int temp = 1;
+    long long temp = 1;
     
     for(int i = 1; i <= x; i++) {
         temp *= i;
     }
     
-    printf("Factorial: %d", temp);
+    printf("Factorial: %lld", temp);
     
     return 0;
 }
